@@ -50,23 +50,6 @@
   z-index: -1;
 }
 
-/* Primera viñeta */
-/* .first-section .overlay {
-  background: radial-gradient(
-    closest-side,
-    rgba(0, 0, 0, 1) 16.5%,
-    rgba(0, 0, 0, 0) 100%
-  );
-} */
-
-/* Segunda viñeta */
-/* .second-section .overlay {
-  background: radial-gradient(
-    closest-side,
-    rgba(29, 68, 148, 0.8),
-    rgba(0, 0, 0, 0) 100%
-  );
-} */
 
 /* Contenido de texto */
 .image-lummi-luminance-dark {
@@ -128,6 +111,7 @@
 .cta-button {
   background: #1d4494;
   border-radius: 8px;
+  margin-top: 7vh;
   padding: 16px 24px 16px 24px;
   display: flex;
   flex-direction: row;
@@ -250,21 +234,6 @@
   font-weight: 700;
 }
 
-
-
-/* .rectangle-1,
-.rectangle-1 * {
-  box-sizing: border-box;
-}
-.rectangle-1 {
-  background: linear-gradient(
-    180deg,
-    rgba(29, 68, 148, 1) 0%,
-    rgba(2, 138, 196, 1) 80.16665577888489%
-  );
-  height: 724px;
-  position: relative;
-} */
 
 .heading2,
 .heading2 * {
