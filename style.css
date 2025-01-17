@@ -5,10 +5,6 @@
   padding: 0;
 }
 
-.fifth-section, .sixth-section {
-  background-color: #1d4494; 
-  
-}
 
 /* Contenedor general para cada sección */
 .section {
@@ -17,12 +13,37 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  
   padding: 10vh 16px;
   overflow: hidden;
-  background: linear-gradient(#1D4494 ,#068CC5);
+  background: linear-gradient( #0C7EBC ,#078BC5);
+  min-height: 100vh; /* Altura mínima de una pantalla */
+  height: auto;
 }
 
+
+.second-section::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 20%; /* Ajusta la altura del degradado si es necesario */
+  background: linear-gradient(to bottom, rgba(12, 126, 188, 0) 0%, #0C7EBC 100%);
+  z-index: 1; /* Asegúrate de que esté encima de la imagen */
+}
+
+
+
+.fourth-section {
+  background: linear-gradient(to bottom, 
+    
+    #078BC5 15%,      
+    rgba(255, 255, 255, 0) 25%, 
+    #FFFFFF 40%    
+  );
+  height: 100vh; 
+}
 
 
 .section img.background-image {
@@ -31,7 +52,17 @@
   left: 0;
   width: 100%; /* Escala horizontalmente */
   height: 100%; /* Escala verticalmente */
-  z-index: 0;
+  
+}
+
+.section img.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Escala horizontalmente */
+  height: 100%; /* Escala verticalmente */
+  
+  object-fit: cover;
 }
 
 /* Fondo oscuro superpuesto */
@@ -47,21 +78,9 @@
     rgba(0, 0, 0, 0) 100%
   );
   opacity: 0.6;
-  z-index: -1;
+  
 }
 
-
-/* Contenido de texto */
-.image-lummi-luminance-dark {
-  background: linear-gradient(to left, #b3b3b3, #b3b3b3);
-  flex-shrink: 0;
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  bottom: 0px;
-  top: 0px;
-  object-fit: cover;
-}
 
 .heading-text {
   display: flex;
@@ -278,10 +297,12 @@
   color: #e1f0f4;
   text-align: center;
   font-family: "CodecColdTrial-News", sans-serif;
-  font-size: 22px;
+  font-size: 4vh;
   line-height: 140%;
   font-weight: 400;
   position: relative;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
 }
 
 .feature-grid,
@@ -310,14 +331,7 @@
   max-width: 360px;
   position: relative;
 }
-.image-lummi {
-  border-radius: 32px;
-  align-self: stretch;
-  flex-shrink: 0;
-  height: 224px;
-  position: relative;
-  object-fit: cover;
-}
+
 .copy {
   display: flex;
   flex-direction: column;
@@ -332,7 +346,7 @@
   color: #f7fffb;
   text-align: center;
   font-family: "CodecColdTrial-News", sans-serif;
-  font-size: 18px;
+  font-size: 3vh;
   line-height: 150%;
   font-weight: 400;
   position: relative;
@@ -345,7 +359,7 @@
   color: #e1f0f4;
   text-align: center;
   font-family: "CodecColdTrial-Light", sans-serif;
-  font-size: 14px;
+  font-size: 2vh;
   line-height: 160%;
   font-weight: 300;
   position: relative;
@@ -357,7 +371,7 @@
   color: #e1f0f4;
   text-align: center;
   font-family: "CodecColdTrial-Light", sans-serif;
-  font-size: 14px;
+  font-size: 2vh;
   line-height: 160%;
   font-weight: 300;
   position: relative;
@@ -699,6 +713,309 @@
   cursor: pointer;
 }
 
+.succes-story {
+  color: #ffffff;
+  text-align: center;
+  font-family: CodecColdTrial-Heavy, sans-serif;
+  font-size: 64.27118682861328px;
+  line-height: 160%;
+  font-weight: 400;
+  position: relative;
+  height: 79px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard {
+  color: #000000;
+  text-align: center;
+  font-family: "-", sans-serif;
+  font-size: 24px;
+  line-height: 126%;
+  font-weight: 400;
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard-span4 {
+  color: #000000;
+  font-family: "CodecColdTrial-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 126%;
+  font-weight: 400;
+}
+.company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard-span5 {
+  color: #000000;
+  font-family: "Gotham-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 126%;
+  font-weight: 700;
+}
+.company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard-span6 {
+  color: #000000;
+  font-family: "CodecColdTrial-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 126%;
+  font-weight: 400;
+}
+
+.results-from-january-to-november-2024 {
+  color: #028ac4;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 2vh;
+}
+.results-from-january-to-november-2024-span3 {
+  color: #028ac4;
+  font-family: "CodecColdTrial-Regular", sans-serif;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 400;
+}
+.results-from-january-to-november-2024-span4 {
+  color: #028ac4;
+  font-family: "Gotham-Book", sans-serif;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 400;
+}
+
+.rectangle-8 {
+  background: #1d4494;
+  border-radius: 5px;
+  height: 42px;
+  position: relative;
+}
+
+.rectangle-11 {
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #1d4494;
+  border-width: 1px;
+  height: 37vh;
+  position: relative;
+}
+
+.rectangles {
+  margin-left: 23vh;
+}
+
+.managment-of {
+  color: #f7fffb;
+  text-align: left;
+  font-family: "CodecColdTrial-Heavy", sans-serif;
+  font-size: 24px;
+  line-height: 160%;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3vh;
+}
+
+.sales {
+  color: #000000;
+  text-align: left;
+  font-family: "CodecColdTrial-Bold", sans-serif;
+  font-size: 3vh;
+  line-height: 160%;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2vh;
+}
+
+
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #1d4494;
+  border-width: 1px 0 0 0;
+  height: 0px;
+  position: relative;
+}
+
+.cuadro {
+  margin-top: 4vh;
+}
+
+.rectangle-15 {
+  border-radius: 32.12px;
+  border-style: solid;
+  border-color: #028ac4;
+  border-width: 0.8px;
+  height: 13vh;
+  width: 51vh;
+  position: relative;
+  transform-origin: 0 0;
+  margin-top: 2vh;
+}
+
+.rectangle-13 {
+  border-radius: 32.12px;
+  border-style: solid;
+  border-color: #028ac4;
+  border-width: 0.8px;
+  height: 18vh;
+  width: 86vh; 
+  position: relative;
+  transform-origin: 0 0;
+  margin-top: 2vh;
+}
+
+.rectangle-14 {
+  border-radius: 32.12px;
+  border-style: solid;
+  border-color: #028ac4;
+  border-width: 0.8px;
+  height: 12vh;
+  width: 60vh;
+  position: relative;
+  transform-origin: 0 0;
+  margin-top: 2vh;
+}
+
+
+
+._20 {
+  color: #028ac4;
+  text-align: left;
+  font-family: Gotham-Ultra, sans-serif;
+  font-size: 9vh;
+  line-height: 132%;
+  font-weight: 400;
+  position: relative;
+  width: 139px;
+  height: 51.55px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.collaborators {
+  color: #028ac4;
+  text-align: left;
+  font-family: "CodecColdTrial-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 132%;
+  font-weight: 700;
+  position: relative;
+  width: 294.46px;
+  /* height: 97px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 2vh;
+}
+
+
+.sales-closing-rate {
+  color: #028ac4;
+  text-align: left;
+  font-family: "CodecColdTrial-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 132%;
+  font-weight: 700;
+  white-space: nowrap; /* Evita saltos de línea */
+  display: flex;
+  align-items: center; /* Centra el texto verticalmente */
+  margin-right: 5vh;
+}
+
+.elements {
+  display: flex;
+}
+
+.icono {
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+  overflow: visible;
+  margin-left: 2vh;
+  justify-self: center;
+  margin-top: 0.8vh;
+}
+
+.lineas {
+  display: flex;
+}
+
+.conversion-rate-to-meetings-in-the-targeted-market {
+  color: #028ac4;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 5vh;
+  line-height: 102%;
+  font-weight: 400;
+  position: relative;
+  /* height: 97px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3vh;
+}
+.conversion-rate-to-meetings-in-the-targeted-market-span3 {
+  color: #028ac4;
+  font-family: "CodecColdTrial-Bold", sans-serif;
+  font-size: 5vh;
+  line-height: 102%;
+  font-weight: 700;
+}
+.conversion-rate-to-meetings-in-the-targeted-market-span4 {
+  color: #028ac4;
+  font-family: "CodecColdTrial-ExtraBold", sans-serif;
+  font-size: 5vh;
+  line-height: 102%;
+  font-weight: 800;
+}
+
+.first-rectangle {
+  display: flex;
+  align-items: center;
+  margin-top: 2vh;
+  
+}
+
+.second-rectangle {
+  display: flex;
+  align-items: center; /* Alinea verticalmente en el centro */
+  justify-content: center; /* Alinea horizontalmente en el centro */
+  height: 100%; /* Asegúrate de ocupar toda la altura del rectángulo */
+  text-align: center; /* Asegúrate de que el texto esté centrado */
+}
+
+
+
+.a-case-that-demonstrates-the-success-and-value-of-our-comprehensive-proposal {
+  color: #1e1e1e;
+  text-align: left;
+  font-family: "CodecColdTrial-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5vh;
+}
+
 .fifth-section {
   background: #1d4494; /* Ya está configurado correctamente */
   
@@ -715,3 +1032,234 @@
   color: #ffffff; /* Esto asegura que el color del texto se mantenga */
   font-weight: bold; /* Opcional, si quieres resaltar el texto */
 }
+
+@media screen and (max-width: 1025px) {
+  .heading-span {
+    font-size: 48px; /* Reducir tamaño del texto */
+    line-height: 1.2;
+  }
+
+  .heading-span2 {
+    font-size: 24px; /* Ajustar subtítulos */
+  }
+
+  .section {
+    padding: 8vh 12px; /* Reducir padding */
+  }
+
+  .cta-button {
+    width: 80%; /* Hacer los botones más responsivos */
+    max-width: 280px;
+  }
+
+  .feature-grid {
+    flex-direction: column; /* Apilar las tarjetas verticalmente */
+    gap: 24px;
+  }
+
+  .cards {
+    max-width: 100%; /* Asegurar que las tarjetas no se salgan del contenedor */
+  }
+
+  .section {
+    margin: 0; /* Eliminar márgenes predeterminados */
+    min-height: 100px; 
+  }
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .heading {
+    font-size: 5vh; /* Ajusta este valor según sea necesario */
+    line-height: 1.4; /* Puedes modificar esto también para mejorar la legibilidad */
+  }
+
+  .heading2-span4 {
+    font-size: 6vh; /* Ajustar subtítulos */
+  }
+
+  .heading2-span5 {
+    font-size: 6vh; /* Ajustar subtítulos */
+  }
+
+  .heading2-span6 {
+    font-size: 6vh; /* Ajustar subtítulos */
+  }
+
+  .type-large-footer-with-divider-and-social-media-links {
+    padding: 40px 16px; /* Reducimos los márgenes para pantallas pequeñas */
+    align-items: center; /* Centramos todo el contenido horizontalmente */
+    text-align: center; /* Alineamos el texto al centro */
+  }
+
+  .content {
+    flex-direction: column; /* Cambiamos a columna para que los elementos se apilen verticalmente */
+    gap: 32px; /* Reducimos el espacio entre elementos */
+    align-items: center; /* Centramos los elementos */
+  }
+
+  .column {
+    width: auto; /* Permitimos que la columna tome el tamaño necesario */
+    align-items: center; /* Centramos los elementos dentro de la columna */
+  }
+
+  .brand-name,
+  .heading4,
+  .heading5,
+  .text {
+    text-align: center; /* Alineamos el texto al centro */
+    justify-content: center;
+  }
+
+  .credits {
+    align-items: center; /* Centramos los créditos */
+    text-align: center; /* Alineamos el texto de los créditos */
+  }
+
+  .row {
+    flex-direction: column; /* Los elementos dentro de la fila se apilan verticalmente */
+    align-items: center; /* Centramos los elementos */
+  }
+
+  .fourth-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 16px; /* Espaciado interno */
+    gap: 24px; /* Espacio entre los elementos */
+    height: auto;
+    width: 100%;
+  }
+
+  .succes-story,
+  .company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard,
+  .results-from-january-to-november-2024,
+  .elements,
+  .a-case-that-demonstrates-the-success-and-value-of-our-comprehensive-proposal {
+    width: 100%; /* Asegura que no se corte contenido */
+    margin: 0 auto;
+  }
+
+  .elements {
+    flex-direction: column; /* Asegura la disposición vertical */
+    gap: 16px; /* Añade espacio entre los elementos */
+    
+  }
+
+  .cuadro {
+    width: 90%; /* Ajusta el ancho del cuadro */
+    margin: 0 auto; /* Centra el cuadro */
+  }
+
+  .rectangles {
+    margin-left: 0; /* Elimina el margin-left */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    gap: 2vh;
+  }
+
+ 
+ 
+
+  .rectangle-11 {
+    height: auto; /* Permite que crezca en función del contenido */
+    margin-bottom: 16px; /* Espaciado adicional entre elementos */
+  }
+
+  .results-from-january-to-november-2024 {
+    margin-bottom: 16px;
+  }
+
+
+
+  
+
+  .company-u-s-based-medical-tourism-company-founded-in-2007-co-developed-a-payment-platform-for-international-patients-with-mastercard {
+    margin-top: 12vh;
+  }
+
+  .results-from-january-to-november-2024 {
+    margin-top: 10vh;
+    text-align: center;
+  }
+
+  .succes-story {
+    margin-top: 10vh;
+  }
+
+  .elements {
+    flex-direction: column; /* Disposición vertical */
+    gap: 2vh; /* Espacio entre bloques */
+    width: 100%;
+  }
+
+  
+
+  .lineas {
+    gap: 2vh; /* Más espacio entre ícono y texto */
+  }
+
+  .sales {
+    font-size: 2vh; /* Reduce el tamaño del texto */
+  }
+
+  
+
+  .rectangle-15, 
+  .rectangle-13, 
+  .rectangle-14 {
+    display: flex; /* Alinear horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between; /* Separar texto y número */
+    height: auto; /* Ajustar altura al contenido */
+    padding: 1vh 2vh; /* Espaciado interno */
+    width: 90%; /* Ajustar el ancho */
+    margin: 0 auto; /* Centrar los rectángulos */
+    margin-top: 3vh;
+  }
+
+  .rectangle-13 {
+    height: auto; /* Asegúrate de que el rectángulo crezca */
+    padding: 2vh; /* Espacio interno adicional */
+  }
+
+  
+
+  /* Asegurar texto en una sola línea al lado del número */
+  .collaborators, 
+  .sales-closing-rate, 
+  .conversion-rate-to-meetings-in-the-targeted-market, .conversion-rate-to-meetings-in-the-targeted-market-span3, .conversion-rate-to-meetings-in-the-targeted-market-span4 {
+    font-size: 2.5vh; /* Ajustar tamaño de texto */
+    line-height: 1.2; /* Reducir espacio vertical */
+    white-space: normal; /* Evitar saltos de línea */
+    overflow-wrap: break-word; /* Evitar desbordes */
+    text-align: left; /* Asegura alineación izquierda */
+    margin-left: 1vh;
+    height: auto; /* Permitir ajuste dinámico */
+  }
+
+  .sales-closing-rate {
+    white-space: normal; /* Permitir saltos de línea */
+    overflow-wrap: break-word; /* Romper palabras largas */
+    text-align: left; /* Asegura una buena alineación */
+  }
+
+  /* Reducir el tamaño del número en móviles */
+  ._20 {
+    font-size: 4vh; /* Reducir tamaño */
+    line-height: 1; /* Ajustar espacio vertical */
+    width: auto; /* Ajuste automático al contenido */
+  }
+
+  .a-case-that-demonstrates-the-success-and-value-of-our-comprehensive-proposal {
+    text-align: center;
+  }
+}
+
