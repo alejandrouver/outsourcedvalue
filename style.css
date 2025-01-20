@@ -779,6 +779,7 @@
   align-items: center;
   justify-content: flex-start;
   margin-top: 2vh;
+  margin-bottom: 3vh;
 }
 .results-from-january-to-november-2024-span3 {
   color: #028ac4;
@@ -800,6 +801,7 @@
   border-radius: 5px;
   height: 42px;
   position: relative;
+  width: 101%;
 }
 
 .rectangle-11 {
@@ -807,8 +809,9 @@
   border-style: solid;
   border-color: #1d4494;
   border-width: 1px;
-  height: 35.5vh;
+  height: 37vh;
   position: relative;
+  width: 101%;
 }
 
 .rectangles {
@@ -844,8 +847,8 @@
 .rectangles {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea los rectángulos al centro */
-  gap: 20px; /* Espacio entre los rectángulos */
+  align-items: flex-start; /* Cambiado de center a flex-start */
+  gap: 20px; /* Mantén el espacio entre los rectángulos */
 }
 
 .rectangle-15, .rectangle-13, .rectangle-14 {
@@ -854,8 +857,6 @@
   border-color: #028ac4;
   border-width: 0.8px;
   position: relative;
-  margin-left: auto; /* Alinea cada rectángulo al centro */
-  margin-right: auto; /* Alinea cada rectángulo al centro */
 }
 
 .rectangle-15 {
@@ -928,6 +929,7 @@
   margin-left: 2vh;
   justify-self: center;
   margin-top: 0.8vh;
+  margin-bottom: 0.3vh;
 }
 
 .line-1 {
@@ -1264,6 +1266,26 @@
     margin-left: 1vh;
     height: auto; /* Permitir ajuste dinámico */
   }
+
+  .conversion-rate-to-meetings-in-the-targeted-market {
+    display: block; /* Asegura un comportamiento de bloque completo */
+    font-size: 2.5vh; /* Escalado del texto */
+    line-height: 1.2; /* Espaciado vertical consistente */
+    white-space: normal; /* Permitir saltos de línea */
+    overflow-wrap: break-word; /* Evitar desbordes */
+    text-align: left; /* Alineación izquierda uniforme */
+    margin-left: 0; /* Eliminar márgenes adicionales */
+    padding-left: 0; /* Evitar desplazamientos innecesarios */
+    margin-left: 2vh;
+}
+
+.conversion-rate-to-meetings-in-the-targeted-market-span3,
+.conversion-rate-to-meetings-in-the-targeted-market-span4 {
+    display: block; /* Mantén el comportamiento de bloque */
+    text-align: left; /* Alineación uniforme para ambas líneas */
+    margin-left: 0; /* Elimina márgenes extra */
+    padding-left: 0; /* Asegura consistencia en el espaciado */
+}
 
 
   .sales-closing-rate {
