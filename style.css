@@ -153,6 +153,8 @@
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  width: 120%;  /* Asegura que el contenedor ocupe todo el ancho disponible */
+  height: 57px;
 }
 .cta {
   color: #f7fffb;
@@ -165,6 +167,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;  /* Asegura que el enlace ocupe todo el espacio disponible */
+  height: 100%; /* Hace que el enlace ocupe toda la altura del contenedor */
+  text-decoration: none;  /* Elimina el subrayado por defecto */
 }
 
 
@@ -802,7 +807,7 @@
   border-style: solid;
   border-color: #1d4494;
   border-width: 1px;
-  height: 37vh;
+  height: 35.5vh;
   position: relative;
 }
 
@@ -825,6 +830,81 @@
   margin-left: 3vh;
 }
 
+.elements {
+  display: flex;
+  justify-content: center; /* Centra ambos elementos (cuadro y rectángulos) */
+  gap: 30px; /* Espacio entre el cuadro y los rectángulos */
+}
+
+.cuadro {
+  flex: 1; /* El cuadro ocupa el espacio disponible a la izquierda */
+  margin-top: 4vh;
+}
+
+.rectangles {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea los rectángulos al centro */
+  gap: 20px; /* Espacio entre los rectángulos */
+}
+
+.rectangle-15, .rectangle-13, .rectangle-14 {
+  border-radius: 32.12px;
+  border-style: solid;
+  border-color: #028ac4;
+  border-width: 0.8px;
+  position: relative;
+  margin-left: auto; /* Alinea cada rectángulo al centro */
+  margin-right: auto; /* Alinea cada rectángulo al centro */
+}
+
+.rectangle-15 {
+  height: 15vh;
+  width: 51vh;
+}
+
+.rectangle-13 {
+  height: 18vh;
+  width: 100vh;
+}
+
+.rectangle-14 {
+  height: 12vh;
+  width: 60vh;
+}
+
+.first-rectangle, .second-rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+._20 {
+  color: #028ac4;
+  font-family: Gotham-Ultra, sans-serif;
+  font-size: 9vh;
+  line-height: 132%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.collaborators, .sales-closing-rate {
+  color: #028ac4;
+  font-family: "CodecColdTrial-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 132%;
+  font-weight: 700;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 3vh;
+}
+
 .sales {
   color: #000000;
   text-align: left;
@@ -840,107 +920,6 @@
   margin-left: 2vh;
 }
 
-
-.line-1 {
-  margin-top: -1px;
-  border-style: solid;
-  border-color: #1d4494;
-  border-width: 1px 0 0 0;
-  height: 0px;
-  position: relative;
-}
-
-.cuadro {
-  margin-top: 4vh;
-}
-
-.rectangle-15 {
-  border-radius: 32.12px;
-  border-style: solid;
-  border-color: #028ac4;
-  border-width: 0.8px;
-  height: 13vh;
-  width: 51vh;
-  position: relative;
-  transform-origin: 0 0;
-  margin-top: 2vh;
-}
-
-.rectangle-13 {
-  border-radius: 32.12px;
-  border-style: solid;
-  border-color: #028ac4;
-  border-width: 0.8px;
-  height: 18vh;
-  width: 86vh; 
-  position: relative;
-  transform-origin: 0 0;
-  margin-top: 2vh;
-}
-
-.rectangle-14 {
-  border-radius: 32.12px;
-  border-style: solid;
-  border-color: #028ac4;
-  border-width: 0.8px;
-  height: 12vh;
-  width: 60vh;
-  position: relative;
-  transform-origin: 0 0;
-  margin-top: 2vh;
-}
-
-
-
-._20 {
-  color: #028ac4;
-  text-align: left;
-  font-family: Gotham-Ultra, sans-serif;
-  font-size: 9vh;
-  line-height: 132%;
-  font-weight: 400;
-  position: relative;
-  width: 139px;
-  height: 51.55px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.collaborators {
-  color: #028ac4;
-  text-align: left;
-  font-family: "CodecColdTrial-Bold", sans-serif;
-  font-size: 32px;
-  line-height: 132%;
-  font-weight: 700;
-  position: relative;
-  width: 294.46px;
-  /* height: 97px; */
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  margin-left: 2vh;
-}
-
-
-.sales-closing-rate {
-  color: #028ac4;
-  text-align: left;
-  font-family: "CodecColdTrial-Bold", sans-serif;
-  font-size: 32px;
-  line-height: 132%;
-  font-weight: 700;
-  white-space: nowrap; /* Evita saltos de línea */
-  display: flex;
-  align-items: center; /* Centra el texto verticalmente */
-  margin-right: 5vh;
-}
-
-.elements {
-  display: flex;
-}
-
 .icono {
   width: 5vh;
   height: 5vh;
@@ -951,8 +930,21 @@
   margin-top: 0.8vh;
 }
 
+.line-1 {
+  margin-top: -1px;
+  border-style: solid;
+  border-color: #1d4494;
+  border-width: 1px 0 0 0;
+  height: 0px;
+  position: relative;
+}
+
 .lineas {
   display: flex;
+}
+
+.first-rectangle {
+  margin-bottom: 2vh;
 }
 
 .conversion-rate-to-meetings-in-the-targeted-market {
@@ -999,7 +991,22 @@
   text-align: center; /* Asegúrate de que el texto esté centrado */
 }
 
+.collaborators {
+  margin-bottom: 4vh;
+}
 
+._20mas {
+  color: #028ac4;
+  font-family: Gotham-Ultra, sans-serif;
+  font-size: 9vh;
+  line-height: 132%;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 4vh;
+}
 
 .a-case-that-demonstrates-the-success-and-value-of-our-comprehensive-proposal {
   color: #1e1e1e;
@@ -1220,7 +1227,7 @@
     justify-content: space-between; /* Separar texto y número */
     height: auto; /* Ajustar altura al contenido */
     padding: 1vh 2vh; /* Espaciado interno */
-    width: 90%; /* Ajustar el ancho */
+    width: 100%; /* Ajustar el ancho */
     margin: 0 auto; /* Centrar los rectángulos */
     margin-top: 3vh;
   }
@@ -1230,7 +1237,20 @@
     padding: 2vh; /* Espacio interno adicional */
   }
 
-  
+  .rectangle-14 {
+    height: auto; /* Asegúrate de que el rectángulo crezca */
+    padding: 2vh; /* Espacio interno adicional */
+    justify-content: center;
+    width: 35vh;
+  }
+
+  .rectangle-15 {
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 33vh;
+  }
 
   /* Asegurar texto en una sola línea al lado del número */
   .collaborators, 
@@ -1245,6 +1265,7 @@
     height: auto; /* Permitir ajuste dinámico */
   }
 
+
   .sales-closing-rate {
     white-space: normal; /* Permitir saltos de línea */
     overflow-wrap: break-word; /* Romper palabras largas */
@@ -1258,8 +1279,25 @@
     width: auto; /* Ajuste automático al contenido */
   }
 
+  ._20mas {
+    font-size: 4vh; /* Reducir tamaño */
+    line-height: 1; /* Ajustar espacio vertical */
+    width: auto; /* Ajuste automático al contenido */
+    margin-top: 3vh;
+  }
+
+  .collaborators {
+    margin-top: 3vh;
+  }
+
+
+
   .a-case-that-demonstrates-the-success-and-value-of-our-comprehensive-proposal {
     text-align: center;
   }
+
+  /* .section {
+    min-height: 100vh;
+  } */
 }
 
